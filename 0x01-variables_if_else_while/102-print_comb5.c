@@ -6,23 +6,30 @@
  */
 int main(void)
 {
-for (int i = 0; i <= 99; i++)
+int tho;
+int hun;
+int ten;
+int bas;
+for (tho = 0 ; tho < 10 ; tho++)
 {
-for (int j = i; j <= 99; j++)
+for (hun = 0 ; hun <= 10 ; hun++)
 {
-int tens1 = i / 10;
-int ones1 = i % 10;
-int tens2 = j / 10;
-int ones2 = j % 10;
-putchar(tens1 + '0');
-putchar(ones1 + '0');
-putchar(' ');
-putchar(tens2 + '0');
-putchar(ones2 + '0');
-if (i != 99 || j != 99)
+for (ten = 0 ; ten < 10 ; ten++)
+{
+for (bas = 0 ; bas < 10 ; bas++)
+{
+putchar('0' + tho);
+putchar('0' + hun);
+putchar(32);
+putchar('0' + ten);
+putchar('0' + bas);
+if (!(tho == 9 && hun == 8))
 {
 putchar(',');
-putchar(' ');
+putchar(32);
+}
+bas++;
+}
 }
 }
 }
