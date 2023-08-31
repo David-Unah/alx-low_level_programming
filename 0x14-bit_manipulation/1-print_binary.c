@@ -2,7 +2,7 @@
 
 /**
  * print_binary - binary equivalent of a decimal number
- *
+ * @n: this will print in binary form
  */
 void print_binary(unsigned long int n)
 {
@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 
 	for (i = 63; i >= 0; i--)
 	{
-		new= n >> i;
+		new = n >> i;
 
 		if (new & 1)
 		{
