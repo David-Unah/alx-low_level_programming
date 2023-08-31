@@ -2,7 +2,8 @@
 
 /**
  * get_bit - this will produce value of a bit at an index in a decimal number
- *
+ * @n: you number to make some search
+ * @index: index of the bit
  * Return: the value of the bit at index index or -1 if an error occured
  */
 int get_bit(unsigned long int n, unsigned int index)

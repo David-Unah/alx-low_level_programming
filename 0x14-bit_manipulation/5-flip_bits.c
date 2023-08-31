@@ -2,8 +2,8 @@
 
 /**
  * flip_bits - counts the number of bits to change
- *
- *
+ * @n: first number to produce
+ * @m: this is the second number
  * Return: show bits to change
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
